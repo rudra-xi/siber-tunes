@@ -1,6 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 * {
 	margin: 0%;
 	padding: 0%;
 	box-sizing: border-box;
 }
 
+:root {
+	--background: linear-gradient(
+		225deg,
+		rgba(21, 120, 153, 1) 0%,
+		rgba(7, 40, 51, 1)
+	);
+	--primary: #072833;
+	--secondary: #fff9e1;
+	--accent: #f04b45;
+}
+
+html,
+body {
+	font-family: "Inter", sans-serif;
+	font-optical-sizing: auto;
+	width: 100vw;
+	height: 100vh;
+	background: rgb(21, 120, 153);
+	background: var(--background);
+	color: var(--secondary);
+}
+
+.header {
+	padding-top: 1.2rem;
+	text-align: center;
+}
+
+.title {
+	font-size: 3.5rem;
+	text-transform: uppercase;
+	letter-spacing: 35px;
+}
+
+.tagline {
+	font-size: 1rem;
+	text-transform: uppercase;
+	letter-spacing: 30px;
+}
+
+footer {
+	position: absolute;
+	width: inherit;
+	display: flex;
+	justify-content: space-between;
+	padding-inline: 3rem;
+	bottom: 0.5rem;
+	font-size: 0.8rem;
+}
+
+a > img {
+	width: 30px;
+	aspect-ratio: 1;
+	filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.3));
+}
