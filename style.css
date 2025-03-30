@@ -25,10 +25,12 @@ body {
 	height: 100vh;
 	background: rgb(21, 120, 153);
 	background: var(--background);
-	color: var(--secondary);
+	color: var(--primary);
 }
 
 .header {
+	color: var(--secondary);
+
 	padding-top: 1.2rem;
 	text-align: center;
 }
@@ -46,6 +48,8 @@ body {
 }
 
 footer {
+	color: var(--secondary);
+
 	position: absolute;
 	width: inherit;
 	display: flex;
@@ -55,8 +59,154 @@ footer {
 	font-size: 0.8rem;
 }
 
-a > img {
-	width: 30px;
-	aspect-ratio: 1;
-	filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.3));
+.music-player {
+	z-index: 0;
+	position: relative;
+	height: 70%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.music-profile {
+	position: absolute;
+	left: 30%;
+	top: 30%;
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	filter: drop-shadow(2px 4px 2px rgba(0, 0, 0, 0.3));
+	z-index: 1;
+}
+
+.music-profile > img {
+	width: inherit;
+	border-radius: inherit;
+	border: 3px solid var(--secondary);
+}
+.music-info {
+	background: var(--secondary);
+	width: 550px;
+	height: 100px;
+	border-radius: 30px;
+	filter: drop-shadow(5px 1px 10px rgba(7, 40, 51, 0.5));
+}
+.music-info > p {
+	text-align: center;
+}
+
+.song-name {
+	padding-top: 10px;
+	font-size: 1.7rem;
+	font-weight: bolder;
+	text-transform: uppercase;
+	letter-spacing: 0.5rem;
+}
+
+.music-nav {
+	position: absolute;
+	top: 53%;
+	z-index: -1;
+	background: var(--secondary);
+	width: 450px;
+	height: 100px;
+	border-radius: 30px;
+	filter: drop-shadow(5px 1px 10px rgba(7, 40, 51, 0.5));
+}
+
+.nav-btn {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	top: 0.9rem;
+	justify-content: center;
+	gap: 3rem;
+}
+
+.nav-btn > svg {
+	width: 1.4rem;
+	cursor: pointer;
+	transition: all 0.5s cubic-bezier(0.1, 0.86, 0.19, 0.37);
+}
+
+.nav-btn > svg:hover {
+	transform: scale(1.1);
+}
+
+.nav-btn > svg:first-child {
+	width: 1.2rem;
+	margin-right: 2rem;
+}
+
+.nav-btn > svg:last-child {
+	width: 1.2rem;
+	margin-left: 2rem;
+}
+
+.timeline {
+	display: flex;
+	justify-content: center;
+	padding-top: 0.75rem;
+	width: 100%; /* Ensure full width */
+}
+
+/* Base range input styles */
+.timeline input[type="range"] {
+	-webkit-appearance: none; /* Disable default styles */
+	appearance: none;
+	width: 60%; /* Fill container */
+	border-radius: 2px;
+	outline: none;
+	margin: 0;
+}
+
+/* Track - Chrome/Safari */
+.timeline input[type="range"]::-webkit-slider-runnable-track {
+	height: 2px;
+	background: var(--primary);
+	border-radius: 5px;
+}
+
+/* Thumb - Chrome/Safari */
+.timeline input[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	width: 12px;
+	height: 12px;
+	background: var(--accent); /* Spotify green (change as needed) */
+	border-radius: 50%;
+	cursor: pointer;
+	margin-top: -5px; /* Centers thumb on track */
+	transition: transform 0.5s cubic-bezier(0.1, 0.86, 0.19, 0.37);
+}
+
+/* Hover effects */
+.timeline input[type="range"]::-webkit-slider-thumb:hover {
+	transform: scale(1.2);
+}
+
+.links {
+	display: flex;
+	gap: 0.5rem; /* Space between icons */
+	align-items: center;
+	justify-content: center; /* Center horizontally */
+}
+
+.links a {
+	display: inline-flex; /* Better alignment control */
+	padding: 0.2rem; /* Clickable area padding */
+}
+
+.links img {
+	width: 28px; /* Fixed width */
+	height: 28px; /* Fixed height */
+	object-fit: contain; /* Prevent distortion */
+	transition: all 0.5s cubic-bezier(0.14, 0.04, 0.11, -0.36);
+}
+
+/* Hover effects */
+.links a:hover img {
+	transform: scale(1.15); /* Slight enlargement */
 }
