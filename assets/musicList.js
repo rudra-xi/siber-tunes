@@ -1,20 +1,24 @@
-import song1 from "./songs/DieWithASmile.mp3";
+import song1 from "./songs/Gorila.mp3";
 import song2 from "./songs/Blue.mp3";
-import song3 from "./songs/CheriCheriLady.mp3";
+import song3 from "./songs/Amalgam.mp3";
 import song4 from "./songs/Espresso.mp3";
-import song5 from "./songs/WeDontTalkAnymore.mp3";
+import song5 from "./songs/CreativeShowreel.mp3";
+import song6 from "./songs/InSlowMotion.mp3";
+import song7 from "./songs/SpinningHead.mp3";
 
-import cover1 from "./covers/DieWithASmile.jpg";
+import cover1 from "./covers/Gorila.jpg";
 import cover2 from "./covers/Blue.jpg";
-import cover3 from "./covers/CheriCheriLady.jpg";
+import cover3 from "./covers/Amalgam.jpg";
 import cover4 from "./covers/Espresso.jpg";
-import cover5 from "./covers/WeDontTalkAnymore.jpg";
+import cover5 from "./covers/CreativeShowreel.jpg";
+import cover6 from "./covers/InSlowMotion.jpg";
+import cover7 from "./covers/SpinningHead.jpg";
 
 const musicList = [
 	{
 		id: 1,
-		title: "Die With A Smile",
-		artist: "Lady Gaga, Bruno Mars",
+		title: "Gorila",
+		artist: "Alex MakeMusic",
 		audio: song1,
 		cover: cover1,
 	},
@@ -27,8 +31,8 @@ const musicList = [
 	},
 	{
 		id: 3,
-		title: "Cheri Cheri Lady",
-		artist: "Modern Talking",
+		title: "Amalgam",
+		artist: "Rockot",
 		audio: song3,
 		cover: cover3,
 	},
@@ -41,9 +45,23 @@ const musicList = [
 	},
 	{
 		id: 5,
-		title: "We Don't Talk Anymore",
-		artist: "Charlie Puth, Selena Gomez",
+		title: "Creative Showreel",
+		artist: "PumpUpTheMind",
 		audio: song5,
 		cover: cover5,
+	},
+	{
+		id: 6,
+		title: "In Slow Motion",
+		artist: "SoundBay",
+		audio: song6,
+		cover: cover6,
+	},
+	{
+		id: 7,
+		title: "Spinning Head",
+		artist: "Govidon",
+		audio: song7,
+		cover: cover7,
 	},
 ];
