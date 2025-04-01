@@ -7,6 +7,7 @@
 }
 
 :root {
+	/* Define theme colors */
 	--background: linear-gradient(
 		225deg,
 		rgba(21, 120, 153, 1) 0%,
@@ -19,18 +20,18 @@
 
 html,
 body {
+	/* Global styles for layout and typography */
 	font-family: "Inter", sans-serif;
 	font-optical-sizing: auto;
 	width: 100vw;
 	height: 100vh;
-	background: rgb(21, 120, 153);
 	background: var(--background);
 	color: var(--primary);
 }
 
 .header {
+	/* Header styling */
 	color: var(--secondary);
-
 	padding-top: 1.2rem;
 	text-align: center;
 }
@@ -42,14 +43,14 @@ body {
 }
 
 .tagline {
-	font-size: 1rem;
+	font-size: 0.8rem;
 	text-transform: uppercase;
-	letter-spacing: 30px;
+	letter-spacing: 18px;
 }
 
 footer {
+	/* Footer styling */
 	color: var(--secondary);
-
 	position: absolute;
 	width: inherit;
 	display: flex;
@@ -60,6 +61,7 @@ footer {
 }
 
 .music-player {
+	/* Music player container */
 	z-index: 0;
 	position: relative;
 	height: 70%;
@@ -71,6 +73,7 @@ footer {
 }
 
 .music-profile {
+	/* Profile image styling */
 	position: absolute;
 	left: 30%;
 	top: 30%;
@@ -86,13 +89,16 @@ footer {
 	border-radius: inherit;
 	border: 3px solid var(--secondary);
 }
+
 .music-info {
+	/* Song information container */
 	background: var(--secondary);
 	width: 550px;
 	height: 100px;
 	border-radius: 30px;
 	filter: drop-shadow(5px 1px 10px rgba(7, 40, 51, 0.5));
 }
+
 .music-info > p {
 	text-align: center;
 }
@@ -106,6 +112,7 @@ footer {
 }
 
 .music-nav {
+	/* Navigation buttons container */
 	position: absolute;
 	top: 53%;
 	z-index: -1;
@@ -117,6 +124,7 @@ footer {
 }
 
 .nav-btn {
+	/* Navigation buttons styling */
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -126,87 +134,90 @@ footer {
 	gap: 3rem;
 }
 
-.nav-btn > svg {
+button {
+	background: none;
+	outline: none;
+	border: none;
+}
+
+.nav-btn > button {
 	width: 1.4rem;
 	cursor: pointer;
 	transition: all 0.5s cubic-bezier(0.1, 0.86, 0.19, 0.37);
 }
 
-.nav-btn > svg:hover {
+.nav-btn > button:hover {
 	transform: scale(1.1);
 }
 
-.nav-btn > svg:first-child {
+.nav-btn > button:first-child {
 	width: 1.2rem;
 	margin-right: 2rem;
 }
 
-.nav-btn > svg:last-child {
+.nav-btn > button:last-child {
 	width: 1.2rem;
 	margin-left: 2rem;
 }
 
 .timeline {
+	/* Timeline slider styling */
 	display: flex;
 	justify-content: center;
 	padding-top: 0.75rem;
-	width: 100%; /* Ensure full width */
+	width: 100%;
 }
 
-/* Base range input styles */
 .timeline input[type="range"] {
-	-webkit-appearance: none; /* Disable default styles */
+	-webkit-appearance: none;
 	appearance: none;
-	width: 60%; /* Fill container */
+	width: 60%;
 	border-radius: 2px;
 	outline: none;
 	margin: 0;
 }
 
-/* Track - Chrome/Safari */
 .timeline input[type="range"]::-webkit-slider-runnable-track {
 	height: 2px;
 	background: var(--primary);
 	border-radius: 5px;
 }
 
-/* Thumb - Chrome/Safari */
 .timeline input[type="range"]::-webkit-slider-thumb {
 	-webkit-appearance: none;
 	width: 12px;
 	height: 12px;
-	background: var(--accent); /* Spotify green (change as needed) */
+	background: var(--accent);
 	border-radius: 50%;
 	cursor: pointer;
-	margin-top: -5px; /* Centers thumb on track */
+	margin-top: -5px;
 	transition: transform 0.5s cubic-bezier(0.1, 0.86, 0.19, 0.37);
 }
 
-/* Hover effects */
 .timeline input[type="range"]::-webkit-slider-thumb:hover {
 	transform: scale(1.2);
 }
 
 .links {
+	/* Social media links styling */
 	display: flex;
-	gap: 0.5rem; /* Space between icons */
+	gap: 0.5rem;
 	align-items: center;
-	justify-content: center; /* Center horizontally */
+	justify-content: center;
 }
 
 .links a {
-	display: inline-flex; /* Better alignment control */
-	padding: 0.2rem; /* Clickable area padding */
+	display: inline-flex;
+	padding: 0.2rem;
 }
 
 .links img {
-	width: 28px; /* Fixed width */
-	height: 28px; /* Fixed height */
-	object-fit: contain; /* Prevent distortion */
+	width: 28px;
+	height: 28px;
+	object-fit: contain;
 	transition: all 0.5s cubic-bezier(0.14, 0.04, 0.11, -0.36);
 }
 
-/* Hover effects */
 .links a:hover img {
-	transform: scale(1.15); /* Slight enlargement */
+	transform: scale(1.15);
 }
