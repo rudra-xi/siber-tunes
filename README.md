@@ -2,6 +2,8 @@
 
 Welcome to **SiberTunes**, a music streaming and management app designed to deliver a smooth and enjoyable experience for music enthusiasts.
 
+![preview](https://github.com/user-attachments/assets/7be88686-ad10-4282-8a3b-bd681e5de80d)
+
 ## About
 
 SiberTunes is a sleek and minimalistic music player focused on providing a clean and intuitive user experience. This application serves as a foundation for future enhancements and features.
