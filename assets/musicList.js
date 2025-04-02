@@ -30,14 +30,14 @@ const musicList = [
 	},
 	{
 		id: 5,
-		title: "Creative Showreel",
+		title: "Showreel",
 		artist: "PumpUpTheMind",
 		audio: "./assets/songs/CreativeShowreel.mp3",
 		cover: "./assets/covers/CreativeShowreel.jpg",
 	},
 	{
 		id: 6,
-		title: "In Slow Motion",
+		title: "Slow Motion",
 		artist: "SoundBay",
 		audio: "./assets/songs/InSlowMotion.mp3",
 		cover: "./assets/covers/InSlowMotion.jpg",

@@ -54,6 +54,7 @@ footer {
 	position: absolute;
 	width: inherit;
 	display: flex;
+	align-items: center;
 	justify-content: space-between;
 	padding-inline: 3rem;
 	bottom: 0.5rem;
@@ -75,10 +76,9 @@ footer {
 .music-profile {
 	/* Profile image styling */
 	position: absolute;
-	left: 30%;
-	top: 30%;
-	width: 140px;
-	height: 140px;
+	left: 28.5%;
+	top: 31%;
+	width: 130px;
 	border-radius: 50%;
 	filter: drop-shadow(2px 4px 2px rgba(0, 0, 0, 0.3));
 	z-index: 1;
@@ -212,12 +212,11 @@ button {
 }
 
 .links img {
-	width: 28px;
-	height: 28px;
+	width: 24px;
 	object-fit: contain;
-	transition: all 0.5s cubic-bezier(0.14, 0.04, 0.11, -0.36);
+	transition: all 0.3s cubic-bezier(0.1, -0.06, 0.05, -0.91);
 }
 
 .links a:hover img {
-	transform: scale(1.15);
+	transform: translateY(-5px);
 }

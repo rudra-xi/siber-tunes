@@ -32,6 +32,24 @@ SiberTunes is a sleek and minimalistic music player focused on providing a clean
      npm start
      ```
 
+## Getting Started
+
+SiberTunes is built using [![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=fff)](https://vitejs.dev/), a fast and modern frontend build tool. By default, the development server runs on port **`5173`**. Follow these steps to get started:
+
+1. Ensure you have [![NodeJS](https://img.shields.io/badge/Node.js-6DA55F?logo=node.js&logoColor=white)](https://nodejs.org/) installed on your system.
+2. Clone the repository and navigate to the project folder as described in the **Installation** section.
+3. Start the development server:
+
+     ```bash
+     npm start
+     ```
+
+4. Open your browser and navigate to:
+
+     ```bash
+     http://localhost:5173
+     ```
+
 ## Roadmap
 
 Planned features and improvements for SiberTunes include:
